@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Decentralized DNS</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <script src="https://cdn.jsdelivr.net/npm/ethers@5.7.2/dist/ethers.umd.min.js"></script>
+</head>
+<body style="font-family: Arial; text-align: center; margin-top: 40px;">
+  <h1>🛜 Decentralized DNS System</h1>
+  <button id="connectButton">Connect MetaMask Wallet</button>
+  <p id="walletAddress"></p>
+  <p id="errorMsg" style="color:red;"></p>
+
+  <div id="dnsActions" style="display:none;">
+    <input id="domainInput" placeholder="Enter domain (e.g. mysite.eth)" style="width:300px;padding:10px;">
+    <br><br>
+    <button onclick="registerDomain()">📝 Register</button>
+    <button onclick="resolveDomain()">🔍 Resolve</button>
+    <button onclick="updateIP()">✏️ Update IP</button>
+    <button onclick="transferDomain()">🔁 Transfer</button>
+    <button onclick="getDomainInfo()">ℹ️ Get Info</button>
+    <p id="actionStatus" style="margin-top:20px;"></p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
